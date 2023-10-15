@@ -1,23 +1,18 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import React from "react"
+import Link from "next/link"
+import styles from "@styles/Layout.module.css"
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <main>
+      <h1 className={styles.mockbuster}>Welcome to Mockbuster!</h1>
+      <p>What would you like to browse?</p>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
-      <Footer />
-    </div>
+      <nav className={styles.links}>
+        <Link href="/film">Films</Link>
+        <Link href="/category">Categories</Link>
+        <Link href="/actor">Actors</Link>
+      </nav>
+    </main>
   )
 }
