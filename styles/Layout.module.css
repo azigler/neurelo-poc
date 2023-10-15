@@ -11,3 +11,18 @@
   flex-direction: column;
   height: 10rem;
 }
+
+a.footer {
+  font-size: 0.8rem;
+  color: #551a8b;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

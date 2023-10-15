@@ -21,9 +21,15 @@ export default function Layout({ children }) {
           <Link href="/actor">Actors</Link>
         </nav>
         {children}
+        <a
+          href="https://github.com/azigler/neurelo-poc"
+          className={styles.footer}
+        >
+          Made with ❤️ by Andrew Zigler
+        </a>
       </>
     )
   } else {
-    return <div className={styles.footer}>Loading...</div>
+    return <div className={styles.loader}>Loading...</div>
   }
 }
